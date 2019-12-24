@@ -23,7 +23,7 @@
 function Rectangle(width, height) {
   this.width = width;
   this.height = height;
-  this.getArea = function () {
+  this.getArea = function a() {
     return this.width * this.height;
   };
 }
@@ -55,8 +55,8 @@ function getJSON(obj) {
  *    const r = fromJSON(Circle.prototype, '{"radius":10}');
  *
  */
-function fromJSON(proto, json) {
-  return JSON.parse(json, proto);
+function fromJSON(/* proto, json */) {
+  throw new Error('Not implemented');
 }
 
 
